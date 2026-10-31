@@ -85,7 +85,7 @@ public class BasicOmniOpMode_Linear extends LinearOpMode {
         backRightDrive = hardwareMap.get(DcMotor.class, "back_right_drive");
 
         // ########################################################################################
-        // !!!            IMPORTANT Drive Information. Test your motor directions.            !!!!!
+        // !!!           IMPORTANT Drive Information. Test your motor directions.            !!!!
         // ########################################################################################
         // Most robots need the motors on one side to be reversed to drive forward.
         // The motor reversals shown here are for a "direct drive" robot (the wheels turn the same direction as the motor shaft)
