@@ -3,8 +3,6 @@ package org.firstinspires.ftc.teamcode.test;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
-import org.firstinspires.ftc.teamcode.subsystems.Shooter;
-
 /*
  * Bench-test OpMode for the Shooter class. Use it to tune RPM and timing BEFORE putting
  * the shooter into your real TeleOp. It does not drive the robot.
