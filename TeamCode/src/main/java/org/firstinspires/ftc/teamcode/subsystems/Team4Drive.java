@@ -7,11 +7,15 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 
 @TeleOp(name = "Matthew Teleop", group = "Teleop")
 public class Team4Drive extends LinearOpMode {
-    private DcMotor frontLeftDrive = null;
-    private DcMotor backLeftDrive = null;
-    private DcMotor frontRightDrive = null;
-    private DcMotor backRightDrive = null;
-
+    //suppress local field warnings
+    @SuppressWarnings("FieldCanBeLocal")
+    private DcMotor frontLeftDrive;
+    @SuppressWarnings("FieldCanBeLocal")
+    private DcMotor backLeftDrive;
+    @SuppressWarnings("FieldCanBeLocal")
+    private DcMotor frontRightDrive;
+    @SuppressWarnings("FieldCanBeLocal")
+    private DcMotor backRightDrive;
     // Speed modes: press D-pad up to cycle speed modes
     private enum SpeedMode {
         slow("Slow", 0.25),
