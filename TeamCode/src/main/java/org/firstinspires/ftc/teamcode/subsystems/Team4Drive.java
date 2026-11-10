@@ -88,10 +88,16 @@ public class Team4Drive extends LinearOpMode {
             }
             lastKeyPressed = keyPressed;
 
-            // drive math stuff
-            double y = -gamepad1.left_stick_y;   // forward/back (stick up is negative fyi)
-            double x = gamepad1.left_stick_x;    // strafe
-            double rx = gamepad1.right_stick_x;  // turn
+            // drivetrain math
+
+            //raw variables
+            double rawY = -gamepad1.left_stick_y;   // forward/back (stick up is negative fyi)
+            double rawX = gamepad1.left_stick_x;    // strafe
+            double rawRx = gamepad1.right_stick_x;  // turn
+            //add input curving (3 for cubic curve) :
+            double x = Math.pow(rawX, 3);
+            double y = Math.pow(rawY, 3);
+            double rx = Math.pow(rawRx, 3);
 
             // get robot direction from imu
             double botDirection = imu.getRobotYawPitchRollAngles().getYaw(AngleUnit.RADIANS);
